@@ -58,7 +58,6 @@ function test_password($password, $salt, $test) {
 	// Version = 0 denotes an old password hashing schema. In the same column, the
 	// password hash was kept previously
 	$version = (strlen($salt) <= 8) ? (int) $salt : 0;
-
 	if ($version == 0) {
 		$comp = hash('sha256', $salt . sha1($test));
 	}
