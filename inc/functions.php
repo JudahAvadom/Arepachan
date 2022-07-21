@@ -791,7 +791,7 @@ function listBoards($just_uri = false) {
 		$boards = array();
 		$query = query("SELECT `uri` FROM ``boards``") or error(db_error());
 		while ($board = $query->fetchColumn()) {
-			$boards[] = $board;
+			$boards[] = '/' . $board;
 		}
 	}
  

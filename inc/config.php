@@ -1,30 +1,5 @@
 <?php
-
-/*
- *  Copyright (c) 2010-2013 Tinyboard Development Group
- *  
- *  WARNING: This is a project-wide configuration file and is overwritten when upgrading to a newer
- *  version of Tinyboard. Please leave this file unchanged, or it will be a lot harder for you to upgrade.
- *  If you would like to make instance-specific changes to your own setup, please use instance-config.php.
- *
- *  This is the default configuration. You can copy values from here and use them in
- *  your instance-config.php
- *
- *  You can also create per-board configuration files. Once a board is created, locate its directory and
- *  create a new file named config.php (eg. b/config.php). Like instance-config.php, you can copy values
- *  from here and use them in your per-board configuration files.
- *
- *  Some directives are commented out. This is either because they are optional and examples, or because
- *  they are "optionally configurable", and given their default values by Tinyboard's code later if unset.
- *
- *  More information: https://web.archive.org/web/20121003095922/http://tinyboard.org/docs/?p=Config
- *
- *  Tinyboard documentation: https://web.archive.org/web/20121003095807/http://tinyboard.org/docs/?p=Main_Page
- *
- */
-
 	defined('TINYBOARD') or exit;
-
 /*
  * =======================
  *  General/misc settings
@@ -911,7 +886,7 @@
  */
 
 	// Tinyboard has been translated into a few langauges. See inc/locale for available translations.
-	$config['locale'] = 'en'; // (en, ru_RU.UTF-8, fi_FI.UTF-8, pl_PL.UTF-8)
+	$config['locale'] = 'es_MX.UTF-8'; // (en, ru_RU.UTF-8, fi_FI.UTF-8, pl_PL.UTF-8)
 
 	// Timezone to use for displaying dates/times.
 	$config['timezone'] = 'America/Los_Angeles';
@@ -977,7 +952,7 @@
 	 * with groups. Each array() in $config['boards'] represents a new square bracket group.
 	 */
 
-	// $config['boards'] = array(
+	$config['boards'] = array('b');
 	// 	array('a', 'b'),
 	// 	array('c', 'd', 'e', 'f', 'g'),
 	// 	array('h', 'i', 'j'),
@@ -989,7 +964,7 @@
 	$config['boardlist_wrap_bracket'] = false;
 
 	// Show page navigation links at the top as well.
-	$config['page_nav_top'] = false;
+	$config['page_nav_top'] = true;
 
 	// Show "Catalog" link in page navigation. Use with the Catalog theme. Set to false to disable.
 	$config['catalog_link'] = 'catalog.html';
