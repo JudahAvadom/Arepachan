@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+	<title>/pol/ - Gaceta politica</title>
+	<link>/pol/</link>
+	<description>Live feed of new threads on the board /pol/ - Gaceta politica.</description>
+	<atom:link href="/pol/index.rss" rel="self" type="application/rss+xml"/>
+		<item>
+		<title>La sociedad industrial y su futuro</title>
+		<link>/pol/res/6.html</link>
+		<guid>/pol/res/6.html</guid>
+		<comments>/pol/res/6.html</comments>
+		<pubDate>Wed, 20 Jul 2022 09:08:45 -0700</pubDate>
+		<description><![CDATA[ <a href='/pol/res/6.html' target=_blank><img style='float:left;margin:8px' border=0 src='/pol/thumb/1658333325660.png'></a> 1. La Revolución Industrial y sus consecuencias han sido un desastre para la raza humana.<br/>Ha aumentado enormemente la expectativa de vida de aquellos de nosotros que vivimos en paises<br/>«avanzados», pero ha desestabilizado la sociedad, ha hecho la vida imposible, ha sometido a los seres<br/>humanos a indignidades, ha conducido a extender el sufrimiento psicológico (en el tercer mundo también el<br/>sufrimiento físico) y ha infligido un daño severo en el mundo natural. El continuo desarrollo de la tecnología<br/>empeorará la situación. Ciertamente someterá a los seres humanos a grandes indignidades e infligirá gran<br/>daño en el mundo natural, probablemente conducirá a un gran colapso social y al sufrimiento psicológico, y<br/>puede que conduzca al incremento del sufrimiento físico incluso en paises «avanzados». ]]></description>
+	</item>
+		<item>
+		<title>Debería?</title>
+		<link>/pol/res/4.html</link>
+		<guid>/pol/res/4.html</guid>
+		<comments>/pol/res/4.html</comments>
+		<pubDate>Tue, 19 Jul 2022 08:23:55 -0700</pubDate>
+		<description><![CDATA[ <a href='/pol/res/4.html' target=_blank><img style='float:left;margin:8px' border=0 src='/pol/thumb/1658244234502.png'></a> Tu sabes a lo que me refiero si hacerlo aquí o no ]]></description>
+	</item>
+		<item>
+		<title>Invasion politica</title>
+		<link>/pol/res/1.html</link>
+		<guid>/pol/res/1.html</guid>
+		<comments>/pol/res/1.html</comments>
+		<pubDate>Wed, 13 Jul 2022 19:43:56 -0700</pubDate>
+		<description><![CDATA[ <a href='/pol/res/1.html' target=_blank><img style='float:left;margin:8px' border=0 src='/pol/thumb/1657766636140.png'></a> Como lidiamos con la amenaza agenta? ]]></description>
+	</item>
+	</channel>
+</rss>

@@ -42,7 +42,6 @@
 	        <br>
 	        <div class="quoteofnow">{{ settings.quoteofnow }}</div>
 	        <br>
-	        <iframe class ="videoofnow" width="560" height="315" src="{{ settings.videoofnow }}"></iframe>
 	        <br>
 	    </div>
 	    <div class="ban">
@@ -62,7 +61,7 @@
 			{% endfor %}
 		{% endif %}
 	    </div>
-	    <h1>Recent Images</h1>
+	    <h1>Imagenes Recientes</h1>
 		<div class="box image">
 			<ul>
 				{% for post in recent_images %}
@@ -75,7 +74,7 @@
 			</ul>
 		</div>
 		<div class="mainBox">
-			<h2>Latest Posts</h2>
+			<h2>Ultimos Posts</h2>
 			<ul>
 				{% for post in recent_posts %}
 					<li>
@@ -88,21 +87,19 @@
 			</ul>
 		</div>
 		<div class="mainBox">
-			<h2>Stats</h2>
+			<h2>Estadisticas</h2>
 			<ul>
 				<li>Total posts: {{ stats.total_posts }}</li>
 				<li>Unique posters: {{ stats.unique_posters }}</li>
-				<li>Active content: {{ stats.active_content|filesize }}</li>
+				<!--li>Active content: {{ stats.active_content|filesize }}</li-->
 			</ul>
 		</div>
 	</div>
 	
 	<hr/>
 	<footer>
-		<p class="unimportant" style="margin-top:20px;text-align:center;">- Tinyboard + 
-			<a href="https://engine.vichan.net/">vichan</a> {{ config.version }} -
-		<br>Tinyboard Copyright &copy; 2010-2014 Tinyboard Development Group    
-		<br><a href="https://engine.vichan.net/">vichan</a> Copyright &copy; 2012-2018 vichan-devel
+		<p style="margin-top:20px;text-align:center;font-size: 16px;">- Arepachan - </p>
+		<p style="margin-top:20px;text-align:center;font-size: 16px;">Donaciones BTC: <strong> bc1qwxrjch79u3hqmhfvg7nk2d733e8gdhq4678ylh </strong></p><br>
 	</footer>
 </body>
 </html>

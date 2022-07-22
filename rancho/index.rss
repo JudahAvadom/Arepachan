@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+	<title>/rancho/ - Rancho</title>
+	<link>/rancho/</link>
+	<description>Live feed of new threads on the board /rancho/ - Rancho.</description>
+	<atom:link href="/rancho/index.rss" rel="self" type="application/rss+xml"/>
+		<item>
+		<title>TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST </title>
+		<link>/rancho/res/4.html</link>
+		<guid>/rancho/res/4.html</guid>
+		<comments>/rancho/res/4.html</comments>
+		<pubDate>Fri, 15 Jul 2022 23:18:49 -0700</pubDate>
+		<description><![CDATA[ <a href='/rancho/res/4.html' target=_blank><img style='float:left;margin:8px' border=0 src='/rancho/thumb/1657952328994.png'></a> TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST ]]></description>
+	</item>
+		<item>
+		<title>Is this a funposting board?
+&gt;jerlado
+&#039;&#039;test&#039;&#039;
+&#039;&#039;&#039;test&#039;&#039;&#039;
+==test==
+__test__
+~~test~~</title>
+		<link>/rancho/res/1.html</link>
+		<guid>/rancho/res/1.html</guid>
+		<comments>/rancho/res/1.html</comments>
+		<pubDate>Thu, 14 Jul 2022 09:28:36 -0700</pubDate>
+		<description><![CDATA[ <a href='/rancho/res/1.html' target=_blank><img style='float:left;margin:8px' border=0 src='/rancho/thumb/1657816115733.png'></a> Is this a funposting board?<br/><span class="quote">&gt;jerlado</span><br/><em>test</em><br/><strong>test</strong><br/><span class="heading">test</span><br/>__test__<br/>~~test~~ ]]></description>
+	</item>
+	</channel>
+</rss>

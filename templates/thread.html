@@ -22,6 +22,25 @@
 	<meta property="og:description" content="{{ thread.body_nomarkup|remove_modifiers|e }}" />
 
 	<title>{{ board.url }} - {{ meta_subject }}</title>
+	<style>
+	    ul, ol {
+	        list-style: none;
+	    }
+	    .navbar {
+	        background: aliceblue;
+            padding: 1px;
+            border-radius: 15px;
+	    }
+	    .navbar ul {
+	        display: flex;
+	    }
+	    .navbar ul li {
+	        padding: 0 5px;
+	    }
+	    .navbar a {
+	        text-decoration: none
+	    }
+	</style>
 </head>
 <body class="8chan vichan {% if mod %}is-moderator{% else %}is-not-moderator{% endif %} active-thread" data-stylesheet="{% if config.default_stylesheet.1 != '' %}{{ config.default_stylesheet.1 }}{% else %}default{% endif %}">
 	{{ boardlist.top }}
@@ -29,7 +48,25 @@
 	{% if pm %}<div class="top_notice">You have <a href="?/PM/{{ pm.id }}">an unread PM</a>{% if pm.waiting > 0 %}, plus {{ pm.waiting }} more waiting{% endif %}.</div><hr />{% endif %}
 	{% if config.url_banner %}<img class="board_image" src="{{ config.url_banner }}" {% if config.banner_width or config.banner_height %}style="{% if config.banner_width %}width:{{ config.banner_width }}px{% endif %};{% if config.banner_width %}height:{{ config.banner_height }}px{% endif %}" {% endif %}alt="" />{% endif %}
 	<header>
-		<h1>{{ board.url }} - {{ board.title|e }}</h1>
+	    <div class="navbar">
+	        <nav>
+	            <ul>
+	                <li>
+	                    <a href="/">Inicio</a>
+	                </li>
+	                <li>
+	                    <a href="/g" title="General">/g</a>
+	                </li>
+	                <li>
+	                    <a href="/pol" title="Politica">/pol</a>
+	                </li>
+	                <li>
+	                    <a href="/rancho" title="Rancho">/rancho</a>
+	                </li>
+	            </ul>
+	        </nav>
+	    </div>
+		<h1 style="padding-top: 4px;">{{ board.url }} - {{ board.title|e }}</h1>
 		<div class="subtitle">
 			{% if board.subtitle %}
 				{% if config.allow_subtitle_html %}
@@ -83,11 +120,6 @@
 	{{ config.ad.bottom }}
 
 	<footer>
-		<p class="unimportant" style="margin-top:20px;text-align:center;">- Tinyboard + 
-			<a href="https://engine.vichan.net/">vichan</a> {{ config.version }} -
-		<br>Tinyboard Copyright &copy; 2010-2014 Tinyboard Development Group    
-		<br><a href="https://engine.vichan.net/">vichan</a> Copyright &copy; 2012-2018 vichan-devel</p>
-		{% for footer in config.footer %}<p class="unimportant" style="text-align:center;">{{ footer }}</p>{% endfor %}
 	</footer>
 	<script type="text/javascript">{% verbatim %}
 		ready();

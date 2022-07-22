@@ -10,14 +10,14 @@
 
 
 	$config['db']['server'] = 'localhost';
-	$config['db']['database'] = 'arepachan';
+	$config['db']['database'] = 'u545143938_arepachan';
 	$config['db']['prefix'] = '';
-	$config['db']['user'] = 'root';
-	$config['db']['password'] = '';
+	$config['db']['user'] = 'u545143938_root';
+	$config['db']['password'] = 'Trapo99.';
 
 
 	$config['cookies']['mod'] = 'mod';
-	$config['cookies']['salt'] = 'OSSL.wTwQPBV6P7gyIo1qQiTZowOUHtpO+fY29qGpZWEQQzbRCeuJ9wpYtQAI3J/76HVw2EtsvNdiPtQbe3dmcnYs4IKdRkvK2ooRxlxzvJIVQYxLl3kBLLfoBIka2u6SotwD4Yi/md8kxDWeQcI3O0GoC4HSOyxfCw5Fn1qX2SuWfTU=';
+	$config['cookies']['salt'] = 'OSSL.znExumHF+Ors+vaxDECpLvDeQRcmJl27u9wZR6n0QhkfBViZKJ6bMXqjVgYDIoTPHcNMY5sJ64W6PE6+4ZTTUuuyiiHsMAdLq9GEAmAZQep65VX4JdXrCH47Q0wwQO4uNSzmwA1Lw6UzGorvhBIreTCFqvzp/tn7to/nDH/YN04=';
 
 	$config['flood_time'] = 10;
 	$config['flood_time_ip'] = 120;
@@ -33,7 +33,9 @@
 	$config['threads_per_page'] = 10;
 	$config['max_pages'] = 10;
 	$config['threads_preview'] = 5;
-	$config['root'] = '/Arepachan/';
-	$config['secure_trip_salt'] = 'OSSL.JBiJK5T976VNPR6Fb+nReC3z/E/C9Isnu/CxaWBsdqDLC3jhv7pxKsSMzmwO8mY/cjVXvo1wavaA7npiUVyvoqYq2nsHs3PGG/8EprJjYwpSk+o5Gj7ag7biPmEnN8gJ9VA3Khx2IQN8rf6ac90EYl8G6GInliHZb7Is3Y0klMs=';
+	$config['root'] = '/';
+	$config['secure_trip_salt'] = 'OSSL.rB53RRZsYAIK371zVz/kryKQtebd4jxVniiMIKjJf2Mbp3pGsnGShAqnytpflHxkBtFBI3xU/odV8I6OAbW+maJruQRsdzdhq7qVR97sbigkMmwB27FpuQfPNiG/9MtOPp31ljzPCmUveQsLTvO79oidqhxyXt8lFs7oDry+G5c=';
 
+	$config['thumb_method'] = 'gm+gifsicle';
+	$config['gnu_md5'] = '1';
 

@@ -12,6 +12,7 @@
         {{ boardlist.top }}
 
 	{% if pm %}<div class="top_notice">You have <a href="?/PM/{{ pm.id }}">an unread PM</a>{% if pm.waiting > 0 %}, plus {{ pm.waiting }} more waiting{% endif %}.</div><hr>{% endif %}
+	
 	<header>
 		<h1>{{ title }}</h1>
 		<div class="subtitle">

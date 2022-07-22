@@ -6,7 +6,6 @@
 /*/thumb
 /*/config.php
 /*.html
-/inc/config.php
 
 # include some files though
 !/templates/*.html

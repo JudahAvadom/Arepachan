@@ -1,5 +1,30 @@
 <?php
+
+/*
+ *  Copyright (c) 2010-2013 Tinyboard Development Group
+ *  
+ *  WARNING: This is a project-wide configuration file and is overwritten when upgrading to a newer
+ *  version of Tinyboard. Please leave this file unchanged, or it will be a lot harder for you to upgrade.
+ *  If you would like to make instance-specific changes to your own setup, please use instance-config.php.
+ *
+ *  This is the default configuration. You can copy values from here and use them in
+ *  your instance-config.php
+ *
+ *  You can also create per-board configuration files. Once a board is created, locate its directory and
+ *  create a new file named config.php (eg. b/config.php). Like instance-config.php, you can copy values
+ *  from here and use them in your per-board configuration files.
+ *
+ *  Some directives are commented out. This is either because they are optional and examples, or because
+ *  they are "optionally configurable", and given their default values by Tinyboard's code later if unset.
+ *
+ *  More information: https://web.archive.org/web/20121003095922/http://tinyboard.org/docs/?p=Config
+ *
+ *  Tinyboard documentation: https://web.archive.org/web/20121003095807/http://tinyboard.org/docs/?p=Main_Page
+ *
+ */
+
 	defined('TINYBOARD') or exit;
+
 /*
  * =======================
  *  General/misc settings
@@ -21,7 +46,7 @@
 	// For development purposes. Displays (and "dies" on) all errors and warnings. Turn on with the above.
 	$config['verbose_errors'] = true;
 	// Warn about deprecations? See vichan-devel/vichan#363 and https://www.youtube.com/watch?v=9crnlHLVdno
-	$config['deprecation_errors'] = false;
+	$config['deprecation_errors'] = true;
 
 	// EXPLAIN all SQL queries (when in debug mode).
 	$config['debug_explain'] = false;
@@ -66,14 +91,14 @@
 	// Example: Unix socket
 	// $config['db']['server'] = ':/tmp/mysql.sock';
 	// Login
-	$config['db']['user'] = '';
-	$config['db']['password'] = '';
+	$config['db']['user'] = 'u545143938_root';
+	$config['db']['password'] = 'Trapo99.';
 	// Tinyboard database
-	$config['db']['database'] = '';
+	$config['db']['database'] = 'u545143938_arepachan';
 	// Table prefix (optional)
 	$config['db']['prefix'] = '';
 	// Use a persistent database connection when possible
-	$config['db']['persistent'] = false;
+	$config['db']['persistent'] = true;
 	// Anything more to add to the DSN string (eg. port=xxx;foo=bar)
 	$config['db']['dsn'] = '';
 	// Connection timeout duration in seconds
@@ -480,7 +505,7 @@
 	$config['track_cites'] = true;
 
 	// Maximum filename length (will be truncated).
-	$config['max_filename_len'] = 255;
+	$config['max_filename_len'] = 500;
 	// Maximum filename length to display (the rest can be viewed upon mouseover).
 	$config['max_filename_display'] = 30;
 
@@ -723,8 +748,8 @@
 	 *					   instead of `convert` for resizing GIFs. It's faster and resulting animated
 	 *					   thumbnails have less artifacts than if resized with ImageMagick.
 	 */
-	$config['thumb_method'] = 'gd';
-	// $config['thumb_method'] = 'convert';
+	// $config['thumb_method'] = 'gm';
+	$config['thumb_method'] = 'convert';
 
 	// Command-line options passed to ImageMagick when using `convert` for thumbnailing. Don't touch the
 	// placement of "%s" and "%d".
@@ -751,7 +776,7 @@
 	// Is your version of ImageMagick or GraphicsMagick old? Older versions may not include the -auto-orient
 	// switch. This is a manual replacement for that switch. This is independent from the above switch;
 	// -auto-orrient is applied when thumbnailing too.
-	$config['convert_manual_orient'] = false;
+	$config['convert_manual_orient'] = true;
 
 	// Regular expression to check for an XSS exploit with IE 6 and 7. To disable, set to false.
 	// Details: https://github.com/savetheinternet/Tinyboard/issues/20
@@ -796,7 +821,7 @@
 
 	// When a thumbnailed image is going to be the same (in dimension), just copy the entire file and use
 	// that as a thumbnail instead of resizing/redrawing.
-	$config['minimum_copy_resize'] = false;
+	$config['minimum_copy_resize'] = true;
 
 	// Maximum image upload size in bytes.
 	$config['max_filesize'] = 10 * 1024 * 1024; // 10MB
@@ -886,7 +911,7 @@
  */
 
 	// Tinyboard has been translated into a few langauges. See inc/locale for available translations.
-	$config['locale'] = 'es_MX.UTF-8'; // (en, ru_RU.UTF-8, fi_FI.UTF-8, pl_PL.UTF-8)
+	$config['locale'] = 'es_ES.UTF-8'; // (en, ru_RU.UTF-8, fi_FI.UTF-8, pl_PL.UTF-8)
 
 	// Timezone to use for displaying dates/times.
 	$config['timezone'] = 'America/Los_Angeles';
@@ -909,7 +934,7 @@
 	$config['thread_subject_in_title'] = false;
 
 	// Additional lines added to the footer of all pages.
-	$config['footer'][] = _('All trademarks, copyrights, comments, and images on this page are owned by and are the responsibility of their respective parties.');
+	$config['footer'][] = _('');
 
 	// Characters used to generate a random password (with Javascript).
 	$config['genpassword_chars'] = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+';
@@ -952,7 +977,7 @@
 	 * with groups. Each array() in $config['boards'] represents a new square bracket group.
 	 */
 
-	$config['boards'] = array('b');
+	// $config['boards'] = array(
 	// 	array('a', 'b'),
 	// 	array('c', 'd', 'e', 'f', 'g'),
 	// 	array('h', 'i', 'j'),
@@ -964,7 +989,7 @@
 	$config['boardlist_wrap_bracket'] = false;
 
 	// Show page navigation links at the top as well.
-	$config['page_nav_top'] = true;
+	$config['page_nav_top'] = false;
 
 	// Show "Catalog" link in page navigation. Use with the Catalog theme. Set to false to disable.
 	$config['catalog_link'] = 'catalog.html';
